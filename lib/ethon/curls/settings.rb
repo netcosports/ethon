@@ -7,6 +7,6 @@ module Ethon
     callback :debug_callback, [:pointer, :debug_info_type, :pointer, :size_t, :pointer], :int
     callback :progress_callback, [:pointer, :long_long, :long_long, :long_long, :long_long], :int
     ffi_lib_flags :now, :global
-    ffi_lib ['libcurl', 'libcurl.so.4']
+    ffi_lib ['/opt/homebrew/Cellar/curl/8.4.0/lib/libcurl.4.dylib']
   end
 end
